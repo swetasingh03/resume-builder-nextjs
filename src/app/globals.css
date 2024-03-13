@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .resume-content,
+  .resume-content * {
+    visibility: visible;
+  }
+
+  .resume-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.custom-font-size {
+  font-size: 14px;
+  /* or your preferred font size */
+}
+
+p {
+  font-size: 12px;
+  font-weight: 500;
+  color: black;
+}
+
+/* Define a custom scrollbar */
+.scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-right: 10px;
+  /* Adjust spacing between skill items */
+  margin-bottom: 10px;
+  /* Adjust spacing between skill rows */
+}
+
+.skill-name {
+  /* Add styles for the skill name here */
+}
+
+.skill-proficiency {
+  /* Add styles for the skill proficiency here */
+}
+
+.color-option {
+  cursor: pointer;
+  margin-right: 10px;
+  /* Adjust margin as needed */
+}
+
+.color-circle {
+  width: 30px;
+  /* Adjust circle size as needed */
+  height: 30px;
+  /* Adjust circle size as needed */
+  border-radius: 50%;
+  border: 2px solid transparent;
+  /* Adjust border thickness as needed */
+}
+
+.color-circle:hover {
+  border-color: black;
+  /* Adjust hover border color as needed */
+}
